@@ -66,19 +66,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* NUMPAD
 
  * ┌──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┐
- * │      │      │      │      │      │      │      │      │   7  │   8  │   9  │      │
+ * │      │      │      │      │      │      │      │   *  │   7  │   8  │   9  │  +   │
  * ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┤
- * │  Gui │  Alt │ Ctrl │ Shft │      │      │      │      │   4  │   5  │   6  │      │
+ * │  Gui │  Alt │ Ctrl │ Shft │      │      │      │  Bsp │   4  │   5  │   6  │  -   │
  * ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┤
- * │      │      │      │      │      │      │      │      │   1  │   2  │   3  │      │
+ * │      │      │      │      │      │      │      │   /  │   1  │   2  │   3  │ Enter│
  * ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┤
  * │      │      │      │      │      │      │      │   ,  │   0  │   .  │      │      │
  * └──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┘
  */
     [_NUMPAD] = LAYOUT_ortho_4x12(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,   KC_7, KC_8,   KC_9,  KC_NO,
-        KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, KC_NO, KC_NO, KC_NO,   KC_4, KC_5,   KC_6,  KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,   KC_1, KC_2,   KC_3,  KC_NO,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_ASTR, KC_7, KC_8,   KC_9,  KC_PLUS,
+        KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO, KC_NO, KC_NO, KC_BSPC, KC_4, KC_5,   KC_6,  KC_MINUS,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_SLSH, KC_1, KC_2,   KC_3,  KC_ENT,
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_COMM, KC_0, KC_DOT, KC_NO, KC_NO
     ),
 
