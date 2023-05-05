@@ -85,19 +85,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* NAVFUN
 
  * ┌────────┬────────┬────────┬────────┬────────┬────────┬────────┬────────┬────────┬────────┬────────┬────────┐
- * │   F1   │   F2   │   F3   │   F4   │ RgbTog │        │        │        │        │   ↑    |        |  PgUp  |
+ * │   F1   │   F2   │   F3   │   F4   │ RgbTog │ DT_PRNT│        │        │        │   ↑    |        |  PgUp  |
  * ├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
- * │ Gui(F5)│ Alt(F6)│Ctrl(F7)│Shft(F8)│ RgbMod │        │        │        │ Shft(←)│ Ctrl(↓)| Alt(→) |Gui(PgD)|
+ * │ Gui(F5)│ Alt(F6)│Ctrl(F7)│Shft(F8)│ RgbMod │ DT_UP  │        │        │ Shft(←)│ Ctrl(↓)| Alt(→) |Gui(PgD)|
  * ├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
- * │   F9   │  F10   │  F11   │  F12   │        │        │        │        │        │        |        |        |
+ * │   F9   │  F10   │  F11   │  F12   │        │ DT_DOWN│        │        │        │        |        |        |
  * ├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
  * │        │        │        │PrintScr│        │        │        │  Home  │        │  End   |        |        |
  * └────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┘
  */
      [_NAVFUN] = LAYOUT_ortho_4x12(
-        KC_F1,         KC_F2,          KC_F3,          KC_F4,         RGB_TOG, KC_NO, KC_NO, KC_NO,   KC_NO,           KC_UP,           KC_NO,            KC_PGUP,
-        LGUI_T(KC_F5), LALT_T(KC_F6),  LCTL_T(KC_F7),  LSFT_T(KC_F8), RGB_MOD, KC_NO, KC_NO, KC_NO,   RSFT_T(KC_LEFT), RCTL_T(KC_DOWN), RALT_T(KC_RIGHT), RGUI_T(KC_PGDN),
-        KC_F9,         KC_F10,         KC_F11,         KC_F12,        KC_NO,   KC_NO, KC_NO, KC_NO,   KC_NO,           KC_NO,           KC_NO,            KC_NO,
-        KC_NO,         KC_NO,          KC_NO,          KC_PSCR,       KC_NO,   KC_NO, KC_NO, KC_HOME, KC_NO,           KC_END,          KC_NO,            KC_NO
+        KC_F1,         KC_F2,          KC_F3,          KC_F4,         RGB_TOG, DT_PRNT, KC_NO, KC_NO,   KC_NO,           KC_UP,           KC_NO,            KC_PGUP,
+        LGUI_T(KC_F5), LALT_T(KC_F6),  LCTL_T(KC_F7),  LSFT_T(KC_F8), RGB_MOD, DT_UP,   KC_NO, KC_NO,   RSFT_T(KC_LEFT), RCTL_T(KC_DOWN), RALT_T(KC_RIGHT), RGUI_T(KC_PGDN),
+        KC_F9,         KC_F10,         KC_F11,         KC_F12,        KC_NO,   DT_DOWN, KC_NO, KC_NO,   KC_NO,           KC_NO,           KC_NO,            KC_NO,
+        KC_NO,         KC_NO,          KC_NO,          KC_PSCR,       KC_NO,   KC_NO,   KC_NO, KC_HOME, KC_NO,           KC_END,          KC_NO,            KC_NO
     )
 };
